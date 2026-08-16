@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Md Shakil Hossain — Internal Audit &amp; Finance Professional</title>
+<meta name="description" content="Md Shakil Hossain — Assistant Manager, Group Internal Audit at DBL Group. CA Professional Level candidate specializing in internal control evaluation, risk assessment, statutory &amp; process audit.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2244%22 fill=%22%230A1F1B%22 stroke=%22%2334D399%22 stroke-width=%224%22/><text x=%2250%22 y=%2262%22 font-size=%2244%22 text-anchor=%22middle%22 fill=%22%23E7B24E%22 font-family=%22serif%22>S</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0A1F1B;
+    --bg-panel:#0F2A24;
+    --bg-panel-2:#13332B;
+    --ink:#EEF6F1;
+    --ink-muted:#9FBAB0;
+    --ink-faint:#6E8B82;
+    --emerald:#34D399;
+    --emerald-dim:#1F7A5C;
+    --gold:#E7B24E;
+    --gold-dim:#8A6A26;
+    --line: rgba(238,246,241,0.12);
+    --line-strong: rgba(238,246,241,0.22);
+    --shadow: 0 20px 60px -20px rgba(0,0,0,0.6);
+    --radius: 4px;
+    --maxw: 1120px;
+    --serif: "Fraunces", "Iowan Old Style", Georgia, serif;
+    --sans: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --mono: "IBM Plex Mono", "SFMono-Regular", Menlo, monospace;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important;}
+  }
+
+  body{
+    background:
+      repeating-linear-gradient(
+        180deg,
+        rgba(238,246,241,0.028) 0px,
+        rgba(238,246,241,0.028) 1px,
+        transparent 1px,
+        transparent 38px
+      ),
+      radial-gradient(ellipse 900px 500px at 15% -10%, rgba(52,211,153,0.14), transparent 60%),
+      radial-gradient(ellipse 700px 500px at 100% 0%, rgba(231,178,78,0.10), transparent 55%),
+      var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{color:inherit; text-decoration:none;}
+  ul{list-style:none;}
+  img,svg{display:block; max-width:100%;}
+
+  ::selection{ background: var(--emerald); color:#06140F; }
+
+  :focus-visible{
+    outline: 2px solid var(--emerald);
+    outline-offset: 3px;
+    border-radius:2px;
+  }
+
+  .wrap{
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* ---------- Ledger margin rule (decorative left line w/ folio ticks) ---------- */
+  .ledger-rule{
+    position:fixed;
+    top:0; bottom:0;
+    left: calc(50% - (min(var(--maxw), 100vw - 64px) / 2) - 26px);
+    width:1px;
+    background: linear-gradient(180deg, transparent, var(--line-strong) 8%, var(--line-strong) 92%, transparent);
+    z-index:1;
+    pointer-events:none;
+  }
+  @media (max-width: 860px){ .ledger-rule{ display:none; } }
+
+  /* ---------- Nav ---------- */
+  header.site-nav{
+    position:fixed; top:0; left:0; right:0; z-index:50;
+    background: rgba(10,31,27,0.82);
+    backdrop-filter: blur(10px) saturate(140%);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner{
+    max-width: var(--maxw);
+    margin:0 auto;
+    padding: 16px 32px;
+    display:flex; align-items:center; justify-content:space-between;
+    gap: 24px;
+  }
+  .brand{
+    display:flex; align-items:center; gap:10px;
+    font-family: var(--serif);
+    font-weight:600;
+    font-size: 1.05rem;
+    letter-spacing:0.01em;
+  }
+  .brand .mark{
+    width:30px; height:30px; border-radius:50%;
+    border:1.5px solid var(--emerald);
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--serif); font-style:italic; font-size:0.95rem; color:var(--gold);
+    flex-shrink:0;
+  }
+  nav.links{ display:flex; gap:28px; }
+  nav.links a{
+    font-size:0.82rem; letter-spacing:0.06em; text-transform:uppercase;
+    color: var(--ink-muted); font-weight:600;
+    padding:6px 2px; border-bottom:1px solid transparent;
+    transition: color .2s ease, border-color .2s ease;
+  }
+  nav.links a:hover{ color: var(--emerald); border-color: var(--emerald); }
+  .nav-cta{
+    font-size:0.78rem; letter-spacing:0.04em; text-transform:uppercase; font-weight:700;
+    padding:9px 16px; border:1px solid var(--gold); color:var(--gold);
+    border-radius: 2px;
+    transition: background .2s ease, color .2s ease;
+    white-space:nowrap;
+  }
+  .nav-cta:hover{ background:var(--gold); color:#1a1305; }
+  .nav-toggle{ display:none; background:none; border:1px solid var(--line-strong); color:var(--ink); width:40px; height:40px; border-radius:2px; }
+
+  @media (max-width: 860px){
+    nav.links{
+      position:absolute; top:100%; left:0; right:0;
+      background: var(--bg-panel);
+      flex-direction:column; gap:0;
+      border-bottom:1px solid var(--line);
+      max-height:0; overflow:hidden;
+      transition: max-height .3s ease;
+    }
+    nav.links.open{ max-height:400px; }
+    nav.links a{ padding:16px 32px; border-bottom:1px solid var(--line); width:100%; }
+    .nav-toggle{ display:block; }
+    .nav-cta{ display:none; }
+  }
+
+  section{ position:relative; z-index:2; }
+
+  /* ---------- Eyebrow / folio labels ---------- */
+  .eyebrow{
+    display:flex; align-items:center; gap:10px;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform:uppercase;
+    color: var(--gold);
+    margin-bottom: 18px;
+  }
+  .eyebrow::before{
+    content:""; display:block; width:26px; height:1px; background: var(--gold-dim);
+  }
+
+  h2.section-title{
+    font-family: var(--serif);
+    font-weight:600;
+    font-size: clamp(1.7rem, 3vw, 2.5rem);
+    letter-spacing:-0.01em;
+    max-width: 20ch;
+  }
+  .section-head{ margin-bottom: 48px; }
+  .section-sub{ color:var(--ink-muted); max-width:56ch; margin-top:14px; font-size:1rem; }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    padding: 168px 0 96px;
+    display:grid;
+    grid-template-columns: 1.35fr 0.65fr;
+    gap: 56px;
+    align-items:center;
+  }
+  .hero h1{
+    font-family: var(--serif);
+    font-weight:600;
+    font-size: clamp(2.6rem, 5.4vw, 4.4rem);
+    line-height:1.05;
+    letter-spacing:-0.015em;
+  }
+  .hero h1 em{
+    font-style:italic; font-weight:500; color: var(--emerald);
+  }
+  .hero .role{
+    margin-top:20px;
+    font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+    color: var(--ink-muted);
+    max-width: 46ch;
+  }
+  .hero .role strong{ color:var(--ink); font-weight:700; }
+  .hero-actions{
+    margin-top: 34px;
+    display:flex; flex-wrap:wrap; gap:14px;
+  }
+  .btn{
+    font-family:var(--sans); font-weight:700; font-size:0.86rem;
+    padding: 13px 22px; border-radius:2px;
+    display:inline-flex; align-items:center; gap:8px;
+    transition: transform .2s ease, background .2s ease, border-color .2s ease, color .2s ease;
+  }
+  .btn-primary{ background: var(--emerald); color:#06140F; }
+  .btn-primary:hover{ background:#54e5b3; transform:translateY(-2px); }
+  .btn-ghost{ border:1px solid var(--line-strong); color:var(--ink); }
+  .btn-ghost:hover{ border-color:var(--emerald); color:var(--emerald); transform:translateY(-2px); }
+
+  /* Stamp signature element */
+  .stamp-wrap{ display:flex; justify-content:center; align-items:center; }
+  .stamp{
+    width: min(280px, 80%);
+    aspect-ratio:1;
+    animation: stampIn 900ms cubic-bezier(.2,1.6,.4,1) 200ms both;
+  }
+  @keyframes stampIn{
+    0%{ transform: scale(2.4) rotate(-18deg); opacity:0; }
+    60%{ opacity:1; }
+    100%{ transform: scale(1) rotate(-9deg); opacity:1; }
+  }
+  .stamp svg{ width:100%; height:100%; overflow:visible; }
+  .stamp-ring-text{ font-family:var(--mono); }
+
+  /* ---------- Ledger summary strip ---------- */
+  .summary-strip{
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    padding: 34px 0;
+  }
+  .summary-grid{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .summary-item{
+    padding: 6px 28px;
+    border-left: 1px solid var(--line);
+  }
+  .summary-item:first-child{ border-left:none; padding-left:0; }
+  .summary-num{
+    font-family: var(--serif);
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    color: var(--emerald);
+    font-weight:600;
+    font-variant-numeric: tabular-nums;
+  }
+  .summary-label{
+    margin-top:6px;
+    font-family:var(--mono);
+    font-size:0.72rem;
+    letter-spacing:0.05em;
+    color: var(--ink-muted);
+    text-transform:uppercase;
+  }
+  @media (max-width:760px){
+    .summary-grid{ grid-template-columns: repeat(2,1fr); gap:24px 0; }
+    .summary-item{ border-left:none; padding-left:0; }
+    .summary-item:nth-child(odd){ padding-right:20px; }
+  }
+
+  /* ---------- Generic section spacing ---------- */
+  .section{ padding: 108px 0; }
+  @media (max-width:760px){ .section{ padding:76px 0; } }
+
+  /* ---------- About ---------- */
+  .about-grid{ display:grid; grid-template-columns: 0.9fr 1.1fr; gap:64px; }
+  .about-body p{ color: var(--ink-muted); margin-bottom:18px; font-size:1.02rem; }
+  .about-body p strong{ color:var(--ink); font-weight:700; }
+  .credential-card{
+    background: var(--bg-panel);
+    border:1px solid var(--line);
+    padding:26px 28px;
+    border-radius: var(--radius);
+  }
+  .credential-card + .credential-card{ margin-top:16px; }
+  .credential-card .k{ font-family:var(--mono); font-size:0.7rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--gold); }
+  .credential-card .v{ margin-top:8px; font-family:var(--serif); font-size:1.1rem; }
+  .credential-card .d{ margin-top:4px; color:var(--ink-muted); font-size:0.9rem; }
+
+  @media (max-width:860px){ .about-grid{ grid-template-columns:1fr; gap:36px; } }
+
+  /* ---------- Experience ledger ---------- */
+  .ledger{ border-top:1px solid var(--line-strong); }
+  .entry{
+    border-bottom:1px solid var(--line);
+    padding: 40px 0;
+    display:grid;
+    grid-template-columns: 90px 1fr 180px;
+    gap: 28px;
+  }
+  .entry .folio{
+    font-family:var(--mono); color:var(--ink-faint); font-size:0.85rem; padding-top:4px;
+  }
+  .entry-role{ font-family:var(--serif); font-weight:600; font-size:1.35rem; }
+  .entry-org{ margin-top:4px; color: var(--emerald); font-weight:700; font-size:0.95rem; }
+  .entry-org span{ color:var(--ink-muted); font-weight:500; }
+  .entry ul{ margin-top:16px; display:grid; gap:9px; }
+  .entry ul li{
+    position:relative; padding-left:20px; color:var(--ink-muted); font-size:0.94rem;
+  }
+  .entry ul li::before{
+    content:"—"; position:absolute; left:0; color:var(--gold-dim);
+  }
+  .entry-duration{
+    font-family:var(--mono); font-size:0.82rem; color:var(--ink-muted);
+    text-align:right; padding-top:4px; white-space:pre-line;
+  }
+  .entry-duration .tag{
+    display:inline-block; margin-top:8px; font-family:var(--sans); font-weight:700;
+    font-size:0.68rem; letter-spacing:0.06em; text-transform:uppercase;
+    color:var(--emerald); border:1px solid var(--emerald-dim); padding:4px 8px; border-radius:2px;
+  }
+  @media (max-width:760px){
+    .entry{ grid-template-columns: 1fr; gap:12px; }
+    .entry-duration{ text-align:left; }
+  }
+
+  /* ---------- Skills ---------- */
+  .skills-grid{ display:grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+  .skill-group{ background:var(--bg-panel); border:1px solid var(--line); padding:28px; border-radius:var(--radius); }
+  .skill-group h3{
+    font-family:var(--mono); font-size:0.74rem; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--gold); margin-bottom:18px;
+  }
+  .chip-row{ display:flex; flex-wrap:wrap; gap:10px; }
+  .chip{
+    font-size:0.86rem; padding:8px 14px; border:1px solid var(--line-strong); border-radius:2px;
+    color:var(--ink); transition: border-color .2s ease, color .2s ease, transform .2s ease;
+  }
+  .chip:hover{ border-color:var(--emerald); color:var(--emerald); transform:translateY(-2px); }
+  @media (max-width:760px){ .skills-grid{ grid-template-columns:1fr; } }
+
+  /* ---------- Audit engagements (project substitute) ---------- */
+  .engagements-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap:20px; }
+  .engagement-card{
+    border:1px solid var(--line); padding:24px; border-radius:var(--radius);
+    background: linear-gradient(180deg, var(--bg-panel), transparent);
+  }
+  .engagement-card h4{
+    font-family:var(--serif); font-size:1.05rem; font-weight:600; color:var(--ink);
+    margin-bottom:12px; padding-bottom:12px; border-bottom:1px dashed var(--line-strong);
+  }
+  .engagement-card ul{ display:grid; gap:8px; }
+  .engagement-card li{ font-size:0.88rem; color:var(--ink-muted); }
+  @media (max-width:900px){ .engagements-grid{ grid-template-columns: repeat(2,1fr); } }
+  @media (max-width:600px){ .engagements-grid{ grid-template-columns: 1fr; } }
+
+  /* ---------- Education / Certifications timeline ---------- */
+  .cert-list{ display:grid; gap:0; border-top:1px solid var(--line); }
+  .cert-row{
+    display:grid; grid-template-columns: 130px 1fr 160px;
+    gap:20px; padding:20px 0; border-bottom:1px solid var(--line);
+    align-items:baseline;
+  }
+  .cert-row .year{ font-family:var(--mono); color:var(--gold); font-size:0.9rem; }
+  .cert-row .name{ font-weight:700; font-size:0.98rem; }
+  .cert-row .inst{ color:var(--ink-muted); font-size:0.88rem; margin-top:2px; }
+  .cert-row .result{ font-family:var(--mono); font-size:0.82rem; color:var(--ink-muted); text-align:right; }
+  @media (max-width:700px){
+    .cert-row{ grid-template-columns:1fr; gap:4px; }
+    .cert-row .result{ text-align:left; }
+  }
+
+  .edu-cards{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:48px; }
+  .edu-card{ border:1px solid var(--line); padding:22px; border-radius:var(--radius); }
+  .edu-card .deg{ font-family:var(--serif); font-weight:600; font-size:1.05rem; }
+  .edu-card .inst{ margin-top:6px; color:var(--emerald); font-size:0.86rem; font-weight:700; }
+  .edu-card .meta{ margin-top:10px; font-family:var(--mono); font-size:0.78rem; color:var(--ink-muted); }
+  @media (max-width:760px){ .edu-cards{ grid-template-columns:1fr; } }
+
+  /* ---------- Contact / Footer ---------- */
+  .contact-panel{
+    background: var(--bg-panel);
+    border:1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 56px;
+    display:grid; grid-template-columns: 1.2fr 0.8fr; gap:48px; align-items:center;
+  }
+  .contact-panel h2{ font-family:var(--serif); font-size:clamp(1.6rem,3vw,2.2rem); font-weight:600; }
+  .contact-panel p{ color:var(--ink-muted); margin-top:14px; max-width:44ch; }
+  .contact-list{ display:grid; gap:14px; }
+  .contact-list a, .contact-list span{
+    display:flex; justify-content:space-between; gap:12px;
+    font-family:var(--mono); font-size:0.9rem; padding-bottom:12px; border-bottom:1px solid var(--line);
+  }
+  .contact-list a{ color:var(--ink); transition:color .2s ease; }
+  .contact-list a:hover{ color:var(--emerald); }
+  .contact-list .k{ color:var(--ink-faint); }
+  @media (max-width:860px){ .contact-panel{ grid-template-columns:1fr; padding:32px; } }
+
+  footer{
+    padding: 40px 0 60px;
+    display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;
+    color: var(--ink-faint); font-size:0.8rem; font-family:var(--mono);
+  }
+  footer a{ color:var(--ink-muted); }
+  footer a:hover{ color:var(--emerald); }
+
+  /* ---------- Reveal on scroll ---------- */
+  .reveal{ opacity:0; transform: translateY(22px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in{ opacity:1; transform:none; }
+
+  /* ---------- Print ---------- */
+  @media print{
+    header.site-nav, .ledger-rule, .hero-actions{ display:none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="ledger-rule" aria-hidden="true"></div>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="mark">S</span>
+      Shakil Hossain
+    </a>
+    <nav class="links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#engagements">Audit Portfolio</a>
+      <a href="#credentials">Credentials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="mailto:shakil.h64@gmail.com">Hire Me</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero wrap">
+    <div class="reveal in">
+      <div class="eyebrow">Folio No. 001 — Profile</div>
+      <h1>Md Shakil <em>Hossain</em></h1>
+      <p class="role">
+        <strong>Assistant Manager, Group Internal Audit</strong> at DBL Group — CA Professional
+        Level candidate and MBA candidate building a career on internal control evaluation,
+        risk assessment, and audit procedures that hold up under scrutiny.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="mailto:shakil.h64@gmail.com">Email Me</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/shakil-rbm" target="_blank" rel="noopener">LinkedIn Profile</a>
+        <a class="btn btn-ghost" href="#" id="downloadCta">Download Resume</a>
+      </div>
+    </div>
+    <div class="stamp-wrap reveal in">
+      <div class="stamp" aria-hidden="true">
+        <svg viewBox="0 0 240 240">
+          <defs>
+            <path id="ringPath" d="M 120,120 m -92,0 a 92,92 0 1,1 184,0 a 92,92 0 1,1 -184,0" />
+          </defs>
+          <circle cx="120" cy="120" r="112" fill="none" stroke="#E7B24E" stroke-width="1.5" opacity="0.55"/>
+          <circle cx="120" cy="120" r="92" fill="none" stroke="#34D399" stroke-width="2"/>
+          <circle cx="120" cy="120" r="60" fill="none" stroke="#E7B24E" stroke-width="1" stroke-dasharray="2 5" opacity="0.7"/>
+          <text class="stamp-ring-text" font-size="12.6" letter-spacing="3.2" fill="#E7B24E">
+            <textPath href="#ringPath" startOffset="1%">CERTIFIED · INTERNAL AUDIT · RISK &amp; ASSURANCE ·</textPath>
+          </text>
+          <text x="120" y="112" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-weight="600" font-size="30" fill="#EEF6F1">M.S.H</text>
+          <text x="120" y="140" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="2" fill="#9FBAB0">CA · ICAB</text>
+          <line x1="70" y1="152" x2="170" y2="152" stroke="#34D399" stroke-width="1" opacity="0.6"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUMMARY STRIP -->
+  <section class="summary-strip">
+    <div class="wrap summary-grid reveal">
+      <div class="summary-item">
+        <div class="summary-num">6.5+</div>
+        <div class="summary-label">Years in Finance &amp; Audit</div>
+      </div>
+      <div class="summary-item">
+        <div class="summary-num">9/17</div>
+        <div class="summary-label">CA Papers Passed</div>
+      </div>
+      <div class="summary-item">
+        <div class="summary-num">20+</div>
+        <div class="summary-label">Entities Audited</div>
+      </div>
+      <div class="summary-item">
+        <div class="summary-num">3</div>
+        <div class="summary-label">Employers, One Trajectory</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap about-grid">
+      <div class="reveal">
+        <div class="eyebrow">Folio No. 002 — Summary</div>
+        <h2 class="section-title">Built for the details others sign off on too quickly.</h2>
+      </div>
+      <div class="about-body reveal">
+        <p>
+          <strong>CA Professional Level candidate</strong> and MBA student in Quantitative Business
+          Analysis at IBA, Jahangirnagar University, with <strong>6.5+ years</strong> of progressive
+          experience across Finance, Accounts, and Internal Audit in Bangladesh.
+        </p>
+        <p>
+          Currently <strong>Assistant Manager — Group Internal Audit at DBL Group</strong>, where the
+          work centers on internal control evaluations, risk assessments, and audit procedures
+          across process areas including fabrics, wastage, cash, production, HR, and dyes &amp;
+          chemicals management.
+        </p>
+        <p>
+          Previously <strong>Supervisor, Accounts at Noah's Ark Logistics</strong>, managing financial
+          reporting and accounting operations across three entities, and <strong>Assistant Manager —
+          Audit &amp; Assurance at A. Wahab &amp; Co., Chartered Accountants</strong> for 4+ years —
+          leading statutory, special, and external audits, tax &amp; VAT computation, and financial
+          statement reviews for public, private, and NGO clients.
+        </p>
+        <div class="credential-card">
+          <div class="k">Based in</div>
+          <div class="v">Gazipur, Dhaka Division, Bangladesh</div>
+          <div class="d">Baroboika Dokkhinpara, Ward No. 16, Gazipur City Corporation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Folio No. 003 — Ledger of Record</div>
+        <h2 class="section-title">Experience, entered chronologically.</h2>
+        <p class="section-sub">Each posting below is logged the way an auditor logs everything else — in order, with what changed and when.</p>
+      </div>
+
+      <div class="ledger reveal">
+        <article class="entry">
+          <div class="folio">№ 03</div>
+          <div>
+            <div class="entry-role">Assistant Manager, Group Internal Audit</div>
+            <div class="entry-org">DBL Group <span>— Diversified Manufacturing Conglomerate</span></div>
+            <ul>
+              <li>Verify payroll accuracy for employees, staff, and management across group entities.</li>
+              <li>Run process audits spanning fabrics, wastage, cash, production, remnants, HR, and dyes &amp; chemicals management.</li>
+              <li>Review internal controls and recommend enhancements across each of these areas.</li>
+              <li>Prepare and present Internal Audit Reports to department heads, process owners, and senior management.</li>
+              <li>Evaluate control effectiveness for fraud and error prevention, then track remediation of findings.</li>
+            </ul>
+          </div>
+          <div class="entry-duration">01/2024 —<br>Present<span class="tag">Current</span></div>
+        </article>
+
+        <article class="entry">
+          <div class="folio">№ 02</div>
+          <div>
+            <div class="entry-role">Supervisor, Accounts</div>
+            <div class="entry-org">Noah's Ark Logistics <span>— International Freight Forwarder</span></div>
+            <ul>
+              <li>Owned end-to-end financial management for three entities — recording, classification, and reconciliation in line with policy and donor guidelines.</li>
+              <li>Led billing and revenue cycles, reviewing documentation and resolving discrepancies with operations teams.</li>
+              <li>Managed receivables and payables, cutting overdue balances through stronger controls and reconciliation.</li>
+              <li>Coached the finance team and rebuilt weak processes into system improvements for efficiency and compliance.</li>
+              <li>Delivered variance reporting and cash flow projections that fed directly into management decisions.</li>
+            </ul>
+          </div>
+          <div class="entry-duration">01/2023 —<br>12/2023</div>
+        </article>
+
+        <article class="entry">
+          <div class="folio">№ 01</div>
+          <div>
+            <div class="entry-role">Assistant Manager, Audit &amp; Assurance</div>
+            <div class="entry-org">A. Wahab &amp; Co. <span>— Chartered Accountants</span></div>
+            <ul>
+              <li>Built tailored audit plans by business risk and directed resourcing across engagements.</li>
+              <li>Led and reviewed the work of articled associates in the field, holding it to IFRS, ISA, and local regulation.</li>
+              <li>Took managerial oversight of statutory audit reports submitted to BIDA, RJSC, and NBR (Tax &amp; VAT authorities).</li>
+              <li>Assessed internal control models and turned findings into pragmatic governance recommendations.</li>
+              <li>Implemented a systematic review process that cut reporting turnaround time.</li>
+            </ul>
+          </div>
+          <div class="entry-duration">10/2018 —<br>02/2023</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Folio No. 004 — Working Papers</div>
+        <h2 class="section-title">Skills, software, and how the work actually gets done.</h2>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="skill-group">
+          <h3>Professional Skills</h3>
+          <div class="chip-row">
+            <span class="chip">Internal Audit</span>
+            <span class="chip">Process Audit</span>
+            <span class="chip">Financial Reporting</span>
+            <span class="chip">Financial Data Analysis</span>
+            <span class="chip">Variance Analysis</span>
+            <span class="chip">Budgeting</span>
+            <span class="chip">Tax &amp; VAT</span>
+            <span class="chip">Accounts</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Accounting &amp; IT Systems</h3>
+          <div class="chip-row">
+            <span class="chip">Oracle ERP</span>
+            <span class="chip">MIS 365 ERP</span>
+            <span class="chip">QuickBooks</span>
+            <span class="chip">Tally 9</span>
+            <span class="chip">Sage</span>
+            <span class="chip">Power BI</span>
+            <span class="chip">SharePoint</span>
+            <span class="chip">Microsoft Office 365</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Standards &amp; Compliance</h3>
+          <div class="chip-row">
+            <span class="chip">IFRS</span>
+            <span class="chip">ISA</span>
+            <span class="chip">Statutory Audit</span>
+            <span class="chip">BIDA / RJSC / NBR Filings</span>
+            <span class="chip">Risk Assessment</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Strengths</h3>
+          <div class="chip-row">
+            <span class="chip">Leadership</span>
+            <span class="chip">Organizing</span>
+            <span class="chip">Communication</span>
+            <span class="chip">Problem-Solving</span>
+            <span class="chip">Teamwork</span>
+            <span class="chip">Decision Making</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUDIT PORTFOLIO / ENGAGEMENTS -->
+  <section class="section" id="engagements">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Folio No. 005 — Engagement Register</div>
+        <h2 class="section-title">A portfolio measured in audits, not repos.</h2>
+        <p class="section-sub">External audit and assurance engagements carried out during four years at A. Wahab &amp; Co., grouped by client type.</p>
+      </div>
+      <div class="engagements-grid reveal">
+        <div class="engagement-card">
+          <h4>Public &amp; Private Limited Companies</h4>
+          <ul>
+            <li>Zenin Cold Storage Limited</li>
+            <li>Janata Jute Mills Limited</li>
+            <li>Sadat Jute Industries Limited</li>
+            <li>NOVOAIR Limited</li>
+          </ul>
+        </div>
+        <div class="engagement-card">
+          <h4>Manufacturing</h4>
+          <ul>
+            <li>Genvio Pharma Limited</li>
+            <li>Crossline Woven Apparels Limited</li>
+            <li>Panda Shoes Industry Limited</li>
+          </ul>
+        </div>
+        <div class="engagement-card">
+          <h4>Development Organizations / INGOs</h4>
+          <ul>
+            <li>United Purpose (UP)</li>
+            <li>Pathfinder International</li>
+            <li>Article19 Bangladesh</li>
+            <li>Plan International Bangladesh</li>
+            <li>ActionAid Bangladesh</li>
+            <li>WaterAid Bangladesh</li>
+            <li>Care Bangladesh</li>
+            <li>IOM &amp; The International Rescue Committee</li>
+            <li>iDE, The Asia Foundation, Helvetas</li>
+            <li>3F–United Federation of Danish Workers</li>
+            <li>The Hunger Project</li>
+          </ul>
+        </div>
+        <div class="engagement-card">
+          <h4>Educational Institutions</h4>
+          <ul>
+            <li>Ayat Education</li>
+            <li>Hope Polytechnic Institute</li>
+            <li>Rev. Paul's High School</li>
+            <li>Bangladesh University of Health &amp; Science</li>
+          </ul>
+        </div>
+        <div class="engagement-card">
+          <h4>Provident, Gratuity &amp; Education Funds</h4>
+          <ul>
+            <li>Netherland Recreation Center (NRC)</li>
+            <li>WaterAid Bangladesh Employees Provident Fund</li>
+            <li>WaterAid Bangladesh Employees Gratuity Fund</li>
+            <li>Fazilatunnesa Education Trust</li>
+          </ul>
+        </div>
+        <div class="engagement-card">
+          <h4>Partnership &amp; Fixed Asset Verification</h4>
+          <ul>
+            <li>ZUNOKS Consulting (Partnership Audit)</li>
+            <li>City Bank (Fixed Assets Verification)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREDENTIALS: Education + Certifications -->
+  <section class="section" id="credentials">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Folio No. 006 — Credentials</div>
+        <h2 class="section-title">Education, training, and certifications on file.</h2>
+      </div>
+
+      <div class="edu-cards reveal">
+        <div class="edu-card">
+          <div class="deg">MBA, Quantitative Business Analysis</div>
+          <div class="inst">IBA, Jahangirnagar University</div>
+          <div class="meta">2026 (Expected) · Enrolled</div>
+        </div>
+        <div class="edu-card">
+          <div class="deg">MBA in Accounting</div>
+          <div class="inst">National University</div>
+          <div class="meta">2018 · CGPA 2.88 / 4.00</div>
+        </div>
+        <div class="edu-card">
+          <div class="deg">BBA in Accounting</div>
+          <div class="inst">National University</div>
+          <div class="meta">2017 · CGPA 3.10 / 4.00</div>
+        </div>
+      </div>
+
+      <div class="cert-list reveal" style="margin-top:56px;">
+        <div class="cert-row">
+          <div class="year">2025</div>
+          <div>
+            <div class="name">Income Tax Practitioner (ITP)</div>
+            <div class="inst">National Board of Revenue (NBR)</div>
+          </div>
+          <div class="result">Licensed</div>
+        </div>
+        <div class="cert-row">
+          <div class="year">Nov 2025</div>
+          <div>
+            <div class="name">Workshop on Significant Audit Areas</div>
+            <div class="inst">ICAB, Bangladesh</div>
+          </div>
+          <div class="result">Completed</div>
+        </div>
+        <div class="cert-row">
+          <div class="year">Jul 2025</div>
+          <div>
+            <div class="name">Training on IFRS 9: Financial Instruments</div>
+            <div class="inst">ICAB, Bangladesh</div>
+          </div>
+          <div class="result">Completed</div>
+        </div>
+        <div class="cert-row">
+          <div class="year">Jan 2025</div>
+          <div>
+            <div class="name">Career Essentials in Business Analysis</div>
+            <div class="inst">Microsoft &amp; LinkedIn Learning</div>
+          </div>
+          <div class="result">Score: 90%</div>
+        </div>
+        <div class="cert-row">
+          <div class="year">Sep 2024</div>
+          <div>
+            <div class="name">Career Essentials in Project Management</div>
+            <div class="inst">Microsoft &amp; LinkedIn Learning</div>
+          </div>
+          <div class="result">Score: 82%</div>
+        </div>
+        <div class="cert-row">
+          <div class="year">Jun 2024</div>
+          <div>
+            <div class="name">Diploma in Financial Accounting</div>
+            <div class="inst">Alison, India</div>
+          </div>
+          <div class="result">Score: 90%</div>
+        </div>
+        <div class="cert-row">
+          <div class="year">2018–23</div>
+          <div>
+            <div class="name">Chartered Accountancy — Certificate Level</div>
+            <div class="inst">A. Wahab &amp; Co., under ICAB</div>
+          </div>
+          <div class="result">9 / 17 papers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="contact-panel reveal">
+        <div>
+          <div class="eyebrow">Folio No. 007 — Sign-Off</div>
+          <h2>Let's talk about the role, the audit, or the numbers.</h2>
+          <p>Open to opportunities in internal audit, assurance, and finance leadership. The fastest way through is email — usually a same-day reply.</p>
+        </div>
+        <div class="contact-list">
+          <a href="mailto:shakil.h64@gmail.com"><span class="k">Email</span> shakil.h64@gmail.com</a>
+          <a href="tel:+8801982416443"><span class="k">Phone</span> +880 1982-416443</a>
+          <a href="https://www.linkedin.com/in/shakil-rbm" target="_blank" rel="noopener"><span class="k">LinkedIn</span> /in/shakil-rbm</a>
+          <span><span class="k">Location</span> Gazipur, Dhaka, BD</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span>© <span id="year"></span> Md Shakil Hossain. Built as a static site, hosted on GitHub Pages.</span>
+  <span><a href="#top">Back to top ↑</a></span>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }));
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Placeholder resume link — replace with a hosted PDF/DOCX in the repo, e.g. "./assets/Shakil-Hossain-Resume.pdf"
+  document.getElementById('downloadCta').addEventListener('click', function(e){
+    if (this.getAttribute('href') === '#') {
+      e.preventDefault();
+      alert('Add your resume file to the repo (e.g. assets/resume.pdf) and update the "Download Resume" link\'s href in index.html to point to it.');
+    }
+  });
+</script>
+
+</body>
+</html>
