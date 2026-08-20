@@ -32,7 +32,7 @@ That's it — no build tools, no npm install, nothing to compile.
 1. Put a PDF version of your resume in the repo, e.g. `assets/resume.pdf`
 2. In `index.html`, find:
    ```html
-   <a class="btn btn-ghost" href="[#](https://drive.google.com/open?id=1BQwOAwYnruFbda47eXVyWJEHBmTwvGKT&usp=drive_fs)" id="downloadCta">Download Resume</a>
+   <a class="btn btn-ghost" href="(https://drive.google.com/open?id=1BQwOAwYnruFbda47eXVyWJEHBmTwvGKT&usp=drive_fs)" id="downloadCta">Download Resume</a>
    ```
    and change `href="#"` to `href="assets/resume.pdf"` (add `download` attribute if you want it to force-download instead of opening in-browser).
 
